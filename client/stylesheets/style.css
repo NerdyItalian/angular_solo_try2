@@ -1,7 +1,19 @@
 body {
     font-family: 'Life Savers', cursive;
+    background: rgb(255, 45, 0);
+    color: rgb(255, 140, 0);
 }
 
 .jumbotron {
     text-align: center;
+    background: rgb(46, 9, 39);
+}
+
+.well {
+    background: rgb(46, 9, 39);
+}
+
+.thumbnail {
+    background: rgb(217, 0, 0);
+    color: white;
 }

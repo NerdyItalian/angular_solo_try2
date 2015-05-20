@@ -17,11 +17,11 @@
 
             <div class="well col-md-offset-1 col-md-4" ng-repeat="family in persons">
                 <row class="thumbnail">
-                    <p><strong>Name:</strong> {{family.name}}</p>
-                    <p><strong>Age:</strong> {{family.age}}</p>
-                    <p><strong>Relationship:</strong> {{family.relationship}}</p>
-                    <p><strong>Description:</strong> {{family.description}}</p>
-                    <img src="{{family.image}}"/>
+                    <img ng-src="{{family.image}}"/>
+                    <li>Name: {{family.name}}</li>
+                    <li>Age: {{family.age}}</li>
+                    <li>Relationship: {{family.relationship}}</li>
+                    <li>Description: {{family.description}}</li>
                 </row>
             </div>
         </div>
