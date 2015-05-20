@@ -2,26 +2,29 @@
 <html ng-app="myApp">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
     <title>Angular Learn</title>
+    <link href='http://fonts.googleapis.com/css?family=Life+Savers:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 
 </head>
     <body ng-controller="AliciaController">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>My Family</h1>
+            </div>
 
-    <p>YO YO YO .... i have a fucked up eyebrow</p>
-    <!-- by using the 'as' between AliciaController and Alicia... it will now make Alicia an alias for AliciaController-->
-
-        <div class="col-md-offset-2" ng-repeat="family in persons">
-           <h1>{{family.name}}</h1>
-            <h2>{{family.age}}</h2>
-            <p>{{family.relationship}}</p>
-            <p>{{family.description}}</p>
-            <img src="{{family.image}}"/>
+            <div class="well col-md-offset-1 col-md-4" ng-repeat="family in persons">
+                <row class="thumbnail">
+                    <p><strong>Name:</strong> {{family.name}}</p>
+                    <p><strong>Age:</strong> {{family.age}}</p>
+                    <p><strong>Relationship:</strong> {{family.relationship}}</p>
+                    <p><strong>Description:</strong> {{family.description}}</p>
+                    <img src="{{family.image}}"/>
+                </row>
+            </div>
         </div>
-
-
-
-
     <script type="text/javascript" src="/vendor/angular/angular.min.js"></script>
     <script type="text/javascript" src="/javascripts/app.min.js"></script>
     </body>
